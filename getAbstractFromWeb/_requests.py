@@ -1,7 +1,6 @@
 import requests
 
 def myrequests(url):
-    print("myrequests")
     _url = url
     response = requests.get(_url)
 
