@@ -1,8 +1,8 @@
-import getAbstractFromWeb as mylib
+from getAbstractFromWeb import myrequests, html2text, abstract_content
 
 # module1 : _requests <=> success
 # fetching_html_text = mylib.myrequests("https://en.wikipedia.org/wiki/Kyushu_University")
-fetching_html_text = mylib.myrequests("https://arxiv.org/abs/1706.03762")
+fetching_html_text = myrequests("https://arxiv.org/abs/1706.03762")
 # print(fetching_html_text)
 
 # module2 : _urllib <=> fail
@@ -18,14 +18,14 @@ fetching_html_text = mylib.myrequests("https://arxiv.org/abs/1706.03762")
 # mylib.hi()
 
 # module4 : _html2text
-text = mylib.html2text(fetching_html_text)
+text = html2text(fetching_html_text)
 # print(text)
 
 # soup = BeautifulSoup(fetching_html_text, 'html.parser')
 # text = soup.get_text()  
 
 # Fetching only "Abstract:" content from arXiv <=> success
-abstract_content = mylib.abstract_content(text)
+abstract_content = abstract_content(text)
 print(abstract_content)
 
 
