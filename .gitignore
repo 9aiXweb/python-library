@@ -1,4 +1,3 @@
-debug.py
-sample.py
 .venv
 .DS_Store
+.gitignore
