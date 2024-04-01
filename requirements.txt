@@ -1,6 +1,4 @@
 flask
 requests
-urllib
-BeautifulSoup
 gunicorn
 
