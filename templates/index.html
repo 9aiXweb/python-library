@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arXiv Abstraction</title>
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="stylesheet" href="./static/prism.css">
+        <script src="js/script/prism.js"></script>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>arXiv Abstraction Retriever !!</h1>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </nav>
+        <section id="showcase">
+            <div class="container">
+              <form action="/" method="post">
+                    
+                    <label for="url"><h2>Input URL:</h2></label>
+                    <input type="text" name="url" placeholder="https://arxiv.org/abs/1706.03762">
+                    <button type="submit" name="url">Submit</button>
+                    <h2>Output Abstraction: </h2>
+<!-- =============== CODE ================================ -->
+    <div class="important">
+
+        {{ abstract }}
+    </div>
+<!-- =============== END CODE ================================ -->
+                </form>
+            </div>
+        </sections>
+        <br>
+        <footer id="main-footer">
+            <p>Copyright &copy; 2024 by Vimeanseth THORNG</p>
+        </footer>
+    </body>
+</html>
